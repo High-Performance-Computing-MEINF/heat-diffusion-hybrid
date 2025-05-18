@@ -1,6 +1,6 @@
 SERIAL_CC = gcc 
 PARALLEL_CC = mpicc 
-CFLAGS = -fopenmp
+CFLAGS = -fopenmp -std=gnu99 -O3 -lm
 TARGET_SERIAL = heat_serial
 TARGET_PARALLEL = heat_parallel
 SRC_SERIAL = heat_serial.c
